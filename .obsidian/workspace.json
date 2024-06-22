@@ -11,28 +11,11 @@
             "id": "3457532c17063c9e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sql.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e93aa97e854c1be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1234.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "02bdbb8b9ed5d789",
@@ -113,7 +96,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1234.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +112,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1234.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,9 +133,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1234.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -189,10 +168,11 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "750da5db1b3ae389",
+  "active": "7f39737aecf1c6d3",
   "lastOpenFiles": [
-    "sql.md",
+    "Welcome.md",
+    "create a link.md",
     "1234.md",
-    "Welcome.md"
+    "sql.md"
   ]
 }
