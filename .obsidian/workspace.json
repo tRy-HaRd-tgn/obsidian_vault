@@ -99,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "sql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "sql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,15 +138,25 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "sql.md"
+              }
+            }
+          },
+          {
+            "id": "750da5db1b3ae389",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,7 +168,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "7f39737aecf1c6d3",
+  "active": "3457532c17063c9e",
   "lastOpenFiles": [
     "sql.md",
     "Welcome.md"
