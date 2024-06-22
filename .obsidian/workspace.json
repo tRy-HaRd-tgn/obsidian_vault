@@ -4,20 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "c0c3f69f4691fbf7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3457532c17063c9e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "02bdbb8b9ed5d789",
         "type": "tabs",
         "children": [
@@ -25,8 +11,12 @@
             "id": "7f39737aecf1c6d3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Vault/sql.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -96,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Vault/sql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Vault/sql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Vault/sql.md"
+              }
             }
           }
         ],
@@ -170,6 +164,7 @@
   },
   "active": "7f39737aecf1c6d3",
   "lastOpenFiles": [
+    "Vault/sql.md",
     "Welcome.md",
     "create a link.md",
     "1234.md",
