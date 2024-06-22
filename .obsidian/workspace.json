@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9e93aa97e854c1be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1234.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "02bdbb8b9ed5d789",
@@ -92,6 +105,7 @@
       {
         "id": "c46c6d11c9836788",
         "type": "tabs",
+        "dimension": 72.11538461538461,
         "children": [
           {
             "id": "bda03591407479a9",
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql.md",
+                "file": "1234.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql.md",
+                "file": "1234.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,10 +153,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql.md"
+                "file": "1234.md"
               }
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "b3bce04698d0aced",
+        "type": "tabs",
+        "dimension": 27.884615384615387,
+        "children": [
           {
             "id": "750da5db1b3ae389",
             "type": "leaf",
@@ -151,8 +173,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,9 +189,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "3457532c17063c9e",
+  "active": "750da5db1b3ae389",
   "lastOpenFiles": [
     "sql.md",
+    "1234.md",
     "Welcome.md"
   ]
 }
