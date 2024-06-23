@@ -10,3 +10,6 @@ INSERT INTO table_name (col_names) VALUES () - (в col_names указываем 
 Команда DROP TABLE table_name; - полностью удаляет таблицу 
 
 Команда CREATE TABLE table_name (column_name column_type); - создает новую таблицу 
+
+Функции:
+Дополнительная команда order by позволяет выводить отсортированную таблицу по какому-либо полю.
