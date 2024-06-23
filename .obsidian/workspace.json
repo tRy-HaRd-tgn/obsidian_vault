@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Команды",
+                "query": "коман",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "7f39737aecf1c6d3",
+  "active": "424aeb3bb7378622",
   "lastOpenFiles": [
     "Vault/sql.md",
     "Welcome.md",
