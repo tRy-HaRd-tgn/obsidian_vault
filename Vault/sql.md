@@ -16,6 +16,8 @@ INSERT INTO table_name (col_names) VALUES () -
 
 Команда CREATE TABLE table_name (column_name column_type); - создает новую таблицу 
 
+Команда DBCC CHECKIDENT (table_name, RESEED, 0); позволяет сбросить identity если произошла ситуация с удалением некоторыми записей в таблицу
+
 #Функции:
 Функция year(date) - позволяет выводить год из даты
 Функция month(date) - позволяет выводить месяц из даты
