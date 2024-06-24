@@ -18,6 +18,18 @@ INSERT INTO table_name (col_names) VALUES () -
 
 Команда DBCC CHECKIDENT (table_name, RESEED, 0); позволяет сбросить identity если произошла ситуация с удалением некоторыми записей в таблицу
 
+Пример добавления полей в уже созданную таблицу:
+	ALTER TABLE table_name
+	ADD column_name column_type
+	Также можно использовать DEFAULT для добавления стандартного значения
+Пример изменения типа данных поля:
+	ALTER TABLE table_name
+	ALTER COLUMN column_name column_type
+
+Команда DECLARE @variable_name variable_type; - предназначена для объявления переменной
+
+Команда SET @variable_name = 'smt'; - предназначения для присвоения значения переменной
+
 #Функции:
 Функция year(date) - позволяет выводить год из даты
 Функция month(date) - позволяет выводить месяц из даты

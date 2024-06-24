@@ -151,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 257.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "424aeb3bb7378622",
+  "active": "5762a7c78192e4f6",
   "lastOpenFiles": [
     "Vault/sql.md",
     "Welcome.md",
