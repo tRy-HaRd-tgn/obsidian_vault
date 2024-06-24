@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "коман",
+                "query": "tag:#Гайд",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
