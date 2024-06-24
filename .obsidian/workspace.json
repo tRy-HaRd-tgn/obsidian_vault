@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Гайд",
+                "query": "tag:#операторы",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "5762a7c78192e4f6",
+  "active": "7f39737aecf1c6d3",
   "lastOpenFiles": [
     "Vault/sql.md",
     "Welcome.md",
