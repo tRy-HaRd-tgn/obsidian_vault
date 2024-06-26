@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "0e3fb7259029fcbd",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "0e3fb7259029fcbd",
+  "active": "7f39737aecf1c6d3",
   "lastOpenFiles": [
     "Vault/sql.md",
     "Welcome.md",
