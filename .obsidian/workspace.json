@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/npx X npm.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/npx X npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/npx X npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/react.md"
+                "file": "Vault/npx X npm.md"
               }
             }
           }
@@ -162,13 +162,14 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "fb58d25d6512c758",
+  "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
-    "Templates/согласование.png",
-    "Vault/html.md",
     "Vault/react.md",
-    "Templates/react tree.png",
+    "Vault/npx X npm.md",
     "Vault/sql.md",
+    "Vault/html.md",
+    "Templates/согласование.png",
+    "Templates/react tree.png",
     "Templates/html tree.webp",
     "Templates/Без названия.md",
     "Welcome.md",
