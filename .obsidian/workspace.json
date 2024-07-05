@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/html.md",
+                "file": "Vault/react.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/html.md",
+                "file": "Vault/react.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/html.md",
+                "file": "Vault/react.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/html.md"
+                "file": "Vault/react.md"
               }
             }
           }
@@ -164,9 +164,9 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
-    "Vault/css.md",
-    "Vault/html.md",
     "Vault/npm.md",
+    "Vault/html.md",
+    "Vault/css.md",
     "Vault/react.md",
     "Vault/sql.md",
     "Templates/согласование.png",
