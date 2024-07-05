@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/sql.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/sql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/sql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/react.md"
+                "file": "Vault/sql.md"
               }
             }
           }
@@ -164,8 +164,8 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
-    "Vault/npm.md",
     "Vault/react.md",
+    "Vault/npm.md",
     "Vault/sql.md",
     "Vault/html.md",
     "Templates/согласование.png",

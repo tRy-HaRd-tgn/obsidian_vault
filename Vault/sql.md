@@ -1,27 +1,52 @@
 # команды:
 
-Команда SELECT col_name FROM table_name ; - выводит данные (при написании * выводит все поля из указанной таблицы). После FROM table_name можно записать WHERE col_name (это позволяет вывести только одно поле из таблицы которое может быть чему-нибудь равно).
+Команда 
+~~~
+SELECT col_name FROM table_name;
+~~~
+- выводит данные (при написании * выводит все поля из указанной таблицы). После FROM table_name можно записать WHERE col_name (это позволяет вывести только одно поле из таблицы которое может быть чему-нибудь равно).
 Если мы хотим выделить несколько значений нужно написать 
+~~~
 WHERE col_name in( 'smt1','smt2');
-
+~~~
 Команда для ввода полей в таблицу(ей и предстоит заполнять таблицы на экзамене):
-INSERT INTO table_name (col_names) VALUES () - 
-(в col_names указываем все затронутые поля которые мы хотим заполнить, 
+~~~
+INSERT INTO table_name (col_names) VALUES ();
+~~~
+- (в col_names указываем все затронутые поля которые мы хотим заполнить, 
 в values в правильной последовательности показываем какими 
 значениями мы заполняем эти поля)
 
-Команда DELETE FROM table_name; - удаляет все поля в таблице
+Команда 
+~~~
+DELETE FROM table_name;
+~~~
+- удаляет все поля в таблице
 
-Команда DROP TABLE table_name; - полностью удаляет таблицу 
+Команда 
+~~~
+DROP TABLE table_name;
+~~~
+- полностью удаляет таблицу 
 
-Команда CREATE TABLE table_name (column_name column_type); - создает новую таблицу 
+Команда 
+~~~
+CREATE TABLE table_name (column_name column_type);
+~~~
+- создает новую таблицу 
 
-Команда DBCC CHECKIDENT (table_name, RESEED, 0); позволяет сбросить identity если произошла ситуация с удалением некоторыми записей в таблицу
+Команда 
+~~~
+DBCC CHECKIDENT (table_name, RESEED, 0);
+~~~
+- позволяет сбросить identity если произошла ситуация с удалением некоторыми записей в таблицу
 
 Пример добавления полей в уже созданную таблицу:
-	ALTER TABLE table_name
-	ADD column_name column_type
-	Также можно использовать DEFAULT для добавления стандартного значения
+~~~
+ALTER TABLE table_name
+ADD column_name column_type
+~~~
+Также можно использовать DEFAULT для добавления стандартного значения
 Пример изменения типа данных поля:
 	ALTER TABLE table_name
 	ALTER COLUMN column_name column_type
