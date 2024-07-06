@@ -80,3 +80,54 @@ export default Counter;
 import Count from './components/Counter'
 <Counter/>
 ~~~
+# Props React
+Компонент может принимать дополнительные данные, эти данные называются props
+~~~
+import React from "react";
+
+const PostItem = (props) => {
+  return ();
+};
+
+export default PostItem;
+~~~
+## Передача информации в компонент 
+~~~
+<PostItem post={{id:1,title: 'Javascript', body: 'Description'}}></PostItem>
+~~~
+## Пример использования props
+~~~
+import React from "react";
+
+const PostItem = (props) => {
+
+  return (
+
+    <div className="post">
+
+      <div className="post_content">
+
+        <strong>
+
+          {props.post.id}. {props.post.title}
+
+        </strong>
+
+        <div>{props.post.body}</div>
+
+      </div>
+
+      <div className="post_btns">
+
+        <button>Удалить</button>
+
+      </div>
+
+    </div>
+
+  );
+
+};
+
+export default PostItem;
+~~~
