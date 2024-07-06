@@ -116,6 +116,11 @@ const PostItem = (props) => {
 
 export default PostItem;
 ~~~
+## props.children
+специальный пропс отвечающий за информацию которую вы написали внутри тега
+~~~
+
+~~~
 ## Передача информации в компонент 
 ~~~
 <PostItem post={{id:1,title: 'Javascript', body: 'Description'}}></PostItem>
