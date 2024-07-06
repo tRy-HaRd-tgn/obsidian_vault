@@ -209,4 +209,7 @@ function MyButton({ children, ...props }) {
 
 }
 ~~~
-# 
+# Работа с input в react
+~~~
+
+~~~
