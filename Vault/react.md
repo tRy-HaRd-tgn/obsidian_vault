@@ -211,5 +211,20 @@ function MyButton({ children, ...props }) {
 ~~~
 # Работа с input в react
 ~~~
+<MyInput
 
+        value={title}
+
+        onChange={(e) => {
+
+          setTitle(e.target.value);
+
+        }}
+
+        type="text"
+
+        placeholder="Название поста"
+
+      ></MyInput>
 ~~~
+- данный код используется для того чтобы сохранять в состоянии данные из инпута
