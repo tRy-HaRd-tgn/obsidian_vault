@@ -192,3 +192,11 @@ function App() {
 
 }
 ~~~
+## Пример с отрисовкой компонента с абсолютно всему переданными свойствами
+~~~
+function MyButton({ children, ...props }) {
+
+  return <button {...props} className={classes.myBtn}>{children}</button>;
+
+}
+~~~
