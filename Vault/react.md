@@ -129,7 +129,7 @@ function MyButton({ children, ...props }) {
         Создать пост
 </MyButton>
 ~~~
-- внутрь компонента MyButton попадает информация ""
+- внутрь компонента MyButton попадает информация "Создать пост"  в виде поля children объекта props
 ## Передача информации в компонент 
 ~~~ cpp
 <PostItem post={{id:1,title: 'Javascript', body: 'Description'}}></PostItem>
