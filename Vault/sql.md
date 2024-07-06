@@ -1,17 +1,17 @@
 # команды
 
 Команда 
-~~~
+~~~ sql
 SELECT col_name FROM table_name;
 ~~~
 - выводит данные (при написании * выводит все поля из указанной таблицы). После FROM table_name можно записать WHERE col_name (это позволяет вывести только одно поле из таблицы которое может быть чему-нибудь равно).
 Если мы хотим выделить несколько значений нужно написать 
-~~~
+~~~ sql
 WHERE col_name in( 'smt1','smt2');
 ~~~
 
 Команда для ввода полей в таблицу(ей и предстоит заполнять таблицы на экзамене):
-~~~
+~~~ sql
 INSERT INTO table_name (col_names) VALUES ();
 ~~~
 - (в col_names указываем все затронутые поля которые мы хотим заполнить, 
@@ -19,50 +19,50 @@ INSERT INTO table_name (col_names) VALUES ();
 значениями мы заполняем эти поля)
 
 Команда 
-~~~
+~~~ sql
 DELETE FROM table_name;
 ~~~
 - удаляет все поля в таблице
 
 Команда 
-~~~
+~~~ sql
 DROP TABLE table_name;
 ~~~
 - полностью удаляет таблицу 
 
 Команда 
-~~~
+~~~ sql
 CREATE TABLE table_name (column_name column_type);
 ~~~
 - создает новую таблицу 
 
 Команда 
-~~~
+~~~ sql
 DBCC CHECKIDENT (table_name, RESEED, 0);
 ~~~
 - позволяет сбросить identity если произошла ситуация с удалением некоторыми записей в таблицу
 
 Пример добавления полей в уже созданную таблицу:
-~~~
+~~~ sql
 ALTER TABLE table_name
 ADD column_name column_type
 ~~~
 - Также можно использовать DEFAULT для добавления стандартного значения
 
 Пример изменения типа данных поля:
-~~~
+~~~ sql
 ALTER TABLE table_name
 ALTER COLUMN column_name column_type
 ~~~
 
 Команда 
-~~~
+~~~ sql
 DECLARE @variable_name variable_type;
 ~~~
 - предназначена для объявления переменной
 
 Команда 
-~~~
+~~~ sql
 SET @variable_name = 'smt';
 ~~~
 - предназначения для присвоения значения переменной
@@ -73,7 +73,7 @@ SET @variable_name = 'smt';
 Функция day(date) - позволяет выводить день из даты
 Агрегатные функции - max() min() sum() count() avg() используются в сочетании с GROUP BY
 пример использования count() - 
-~~~
+~~~ sql
 select gender,
 count(distinct id) as qty
 from clients
