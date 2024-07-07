@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "useref",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -162,7 +163,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "c91842e29b82ccbe",
+  "active": "424aeb3bb7378622",
   "lastOpenFiles": [
     "Vault/css.md",
     "Vault/html.md",

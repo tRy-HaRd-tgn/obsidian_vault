@@ -92,7 +92,8 @@ const bodyInputRef = useRef();
 ref={bodyInputRef}
 ~~~
 - Данная строчка прописывается внутри тега, после этого по bodyInputRef можно доставать информацию элемента
-### Использование useref в связке с 
+### Использование useref в связке с компонентам
+Нужно использовать функцию React.forwardRef(), в который передаем ref
 ## useMemo
 ## useCallback
 ## useContext
