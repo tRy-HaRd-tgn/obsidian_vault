@@ -109,6 +109,17 @@ setPosts([...posts, { ...post, id: Date.now() }]);
       ></MyInput>
 ~~~
 - данный код используется для того чтобы сохранять в состоянии данные из input
+## Сортировка данных по именам или описаниям
+~~~
+  const sortPost = (sort) => {
+
+    setSelectedSort(sort);
+
+    setPosts([...posts].sort((a,b)=> a[sort].localeCompare(b[sort])))
+
+  };
+~~~
+- 
 ## useEffect
 ## useRef
 С помощью этого хука мы можем получить доступ к DOM элементу
