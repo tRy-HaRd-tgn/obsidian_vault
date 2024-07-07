@@ -84,16 +84,37 @@ setCount(count+1);
 ## useRef
 С помощью этого хука мы можем получить доступ к DOM элементу
 ### Объявление хука
-~~~
+~~~ js
 const bodyInputRef = useRef();
 ~~~
 ### Пример связывания хука и элемента DOM 
-~~~
+~~~ js
 ref={bodyInputRef}
 ~~~
 - Данная строчка прописывается внутри тега, после этого по bodyInputRef можно доставать информацию элемента
 ### Использование useref в связке с компонентам
-Нужно использовать функцию React.forwardRef(), в который передаем ref
+Передаем ref{название useRef}
+~~~ js
+<MyInput
+
+        ref={bodyInputRef}
+
+        type="text"
+
+        placeholder="Описание поста"
+
+></MyInput>
+~~~
+- Нужно использовать функцию React.forwardRef(), в который передаем ref
+~~~ js
+const MyInput = React.forwardRef((props, ref) => {
+
+  return <input ref={ref} {...props} className={classes.myInput} />;
+
+});
+~~~
+это позволит нам доставать поля из input написанного в компоненте
+Данный компонент называется неуправляемым
 ## useMemo
 ## useCallback
 ## useContext
@@ -111,7 +132,7 @@ export default Counter;
 ~~~
 ## Добавление компонента
 Для добавления компонента в конце компонента должно быть прописано export default и название корневого элемента- это делает для того чтобы react мог подхватить этот компонент и вывести его
-~~~
+~~~ js
 import Count from './components/Counter'
 <Counter/>
 ~~~
@@ -136,7 +157,7 @@ function MyButton({ children, ...props }) {
 }
 ~~~
 
-~~~
+~~~ js
 <MyButton type="submit" onClick={addNewPost}>
         Создать пост
 </MyButton>
@@ -241,7 +262,7 @@ function MyButton({ children, ...props }) {
 ~~~
 - данный код используется для того чтобы сохранять в состоянии данные из input
 # Убираем перезагрузку страницы при отправлении формы
-~~~
+~~~ js
 const addNewPost = (e) => {
 
     e.preventDefault()

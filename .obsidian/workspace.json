@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useref",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,12 +162,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "424aeb3bb7378622",
+  "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
+    "Vault/react.md",
     "Vault/css.md",
     "Vault/html.md",
     "Vault/npm.md",
-    "Vault/react.md",
     "Vault/sql.md",
     "Templates/создание css модуля.png",
     "создание css модуля.png",
