@@ -90,6 +90,25 @@ setPosts([...posts, newPost]);
 const [post, setPost] = useState({ title: "", body: "" });
 setPosts([...posts, { ...post, id: Date.now() }]);
 ~~~
+### Работа с input в react(состояние)
+~~~ js
+<MyInput
+
+        value={title}
+
+        onChange={(e) => {
+
+          setTitle(e.target.value);
+
+        }}
+
+        type="text"
+
+        placeholder="Название поста"
+
+      ></MyInput>
+~~~
+- данный код используется для того чтобы сохранять в состоянии данные из input
 ## useEffect
 ## useRef
 С помощью этого хука мы можем получить доступ к DOM элементу
@@ -146,7 +165,9 @@ export default Counter;
 import Count from './components/Counter'
 <Counter/>
 ~~~
-# Props React
+# Обмен данными между компонентами
+props - некоторые аргументы, параметры , которые может принимать компонент из вне, но обмен этими данными идет только сверху вниз
+## Props React
 Компонент может принимать дополнительные данные, эти данные называются props
 ~~~ cpp
 import React from "react";
@@ -157,7 +178,7 @@ const PostItem = (props) => {
 
 export default PostItem;
 ~~~
-## props.children
+### props.children
 специальный пропс отвечающий за информацию которую вы написали внутри тега
 ~~~ js
 function MyButton({ children, ...props }) {
@@ -173,11 +194,11 @@ function MyButton({ children, ...props }) {
 </MyButton>
 ~~~
 - внутрь компонента MyButton попадает информация "Создать пост"  в виде поля children объекта props
-## Передача информации в компонент 
+### Передача информации в компонент 
 ~~~ cpp
 <PostItem post={{id:1,title: 'Javascript', body: 'Description'}}></PostItem>
 ~~~
-## Пример использования props
+### Пример использования props
 ~~~ cpp
 import React from "react";
 
@@ -213,7 +234,7 @@ const PostItem = (props) => {
 
 export default PostItem;
 ~~~
-## Пример отрисовки компонентов с передачей в них массива объектов
+### Пример отрисовки компонентов с передачей в них массива объектов
 При использовании такого подхода react все будет отрисовывать, но будет просить указание key, это нужно для того чтобы react мог понимать какой именно из указанных компонентов нужно перерисовать, при указании key нужно использовать уникальный идентификатор, использование индекса массива в этом случае некорректна , потому что при удалении  объектов это может вызвать дополнительные трудности
 ~~~ cpp
 function App() {
@@ -244,7 +265,7 @@ function App() {
 
 }
 ~~~
-## Пример с отрисовкой компонента с абсолютно всеми переданными свойствами
+### Пример с отрисовкой компонента с абсолютно всеми переданными свойствами
 ~~~ cpp
 function MyButton({ children, ...props }) {
 
@@ -252,25 +273,6 @@ function MyButton({ children, ...props }) {
 
 }
 ~~~
-# Работа с input в react
-~~~ js
-<MyInput
-
-        value={title}
-
-        onChange={(e) => {
-
-          setTitle(e.target.value);
-
-        }}
-
-        type="text"
-
-        placeholder="Название поста"
-
-      ></MyInput>
-~~~
-- данный код используется для того чтобы сохранять в состоянии данные из input
 # Убираем перезагрузку страницы при отправлении формы
 ~~~ js
 const addNewPost = (e) => {
