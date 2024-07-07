@@ -82,6 +82,12 @@ setCount(count+1);
 ~~~
 ## useEffect
 ## useRef
+С помощью этого хука мы можем получить доступ к DOM элементу
+### Объявление хука
+~~~
+const bodyInputRef = useRef();
+~~~
+### Пример св
 ## useMemo
 ## useCallback
 ## useContext
@@ -228,3 +234,16 @@ function MyButton({ children, ...props }) {
       ></MyInput>
 ~~~
 - данный код используется для того чтобы сохранять в состоянии данные из input
+# Убираем перезагрузку страницы при отправлении формы
+~~~
+const addNewPost = (e) => {
+
+    e.preventDefault()
+
+    console.log(title);
+
+    console.log(description);
+
+  };
+~~~
+- Где addNewPost - событие при отправлении формы
