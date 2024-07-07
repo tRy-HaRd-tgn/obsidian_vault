@@ -87,7 +87,12 @@ setCount(count+1);
 ~~~
 const bodyInputRef = useRef();
 ~~~
-### Пример св
+### Пример связывания хука и элемента DOM 
+~~~
+ref={bodyInputRef}
+~~~
+- Данная строчка прописывается внутри тега, после этого по bodyInputRef можно доставать информацию элемента
+### Использование useref в связке с 
 ## useMemo
 ## useCallback
 ## useContext
