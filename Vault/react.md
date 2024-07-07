@@ -169,7 +169,7 @@ import Count from './components/Counter'
 props - некоторые аргументы, параметры , которые может принимать компонент из вне, но обмен этими данными идет только сверху вниз
 ### Callback
 происходит путем передачи в компонент функции, которая что-либо выполняет с данными из компонента в родительском элементе
-~~~
+~~~ js
 <PostForm create={createNewPost}></PostForm>
 
 const createNewPost= (newPost)=>{
@@ -180,7 +180,7 @@ const createNewPost= (newPost)=>{
 ~~~
 - где createNewPost - функции которая должна вызываться из дочернего компонента
 - createNewPost выполняет изменения в состоянии в котором находятся объекты, которые рисует другой компонент
-~~~
+~~~ js
 const addNewPost = (e) => {
 
     e.preventDefault();
