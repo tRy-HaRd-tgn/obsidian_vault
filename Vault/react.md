@@ -210,7 +210,7 @@ function MyButton({ children, ...props }) {
 }
 ~~~
 # Работа с input в react
-~~~
+~~~ js
 <MyInput
 
         value={title}
@@ -227,4 +227,4 @@ function MyButton({ children, ...props }) {
 
       ></MyInput>
 ~~~
-- данный код используется для того чтобы сохранять в состоянии данные из инпута
+- данный код используется для того чтобы сохранять в состоянии данные из input
