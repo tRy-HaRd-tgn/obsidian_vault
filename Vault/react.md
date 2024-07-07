@@ -81,10 +81,15 @@ setCount(count+1);
       <h3>{value}</h3>
 ~~~
 ### Добавление в состояние с массивом объектов
-~~~
+~~~ js
 setPosts([...posts, newPost]);
 ~~~
 - где posts - массив, а newPost - новый объект 
+### Состояние с несколькими полями
+~~~ js
+const [post, setPost] = useState({ title: "", body: "" });
+setPosts([...posts, { ...post, id: Date.now() }]);
+~~~
 ## useEffect
 ## useRef
 С помощью этого хука мы можем получить доступ к DOM элементу
