@@ -157,6 +157,26 @@ const MyInput = React.forwardRef((props, ref) => {
 Данный компонент называется неуправляемым
 ## useMemo
 Данный хук производит вычисления запоминает результаты и кеширует, подобное поведение называется мемоизация и на каждую отрисовку элемента она не пересчитывается 
+~~~
+const sortedPosts = useMemo(() => {
+
+    console.log("отработала функция сортировки");
+
+    if (selectedSort) {
+
+      return [...posts].sort((a, b) =>
+
+        a[selectedSort].localeCompare(b[selectedSort])
+
+      );
+
+    }
+
+    return posts;
+
+  }, [selectedSort, posts]);
+~~~
+- callback отрабатывает только в том случае, когда изменяются selectedSort или post
 ## useCallback
 ## useContext
 
