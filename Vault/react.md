@@ -61,7 +61,48 @@ function MyButton(props) {
 Мы можем использовать хуки только на высшем уровне вложенности ( объявление и использование хуков внутри функций, циклов, условиях запрещено) 
 ## Кастомные хуки
 Выглядят как функции, внутри которых используются стандартные react хуки
+~~~
+import { useMemo } from "react";
 
+export const useSortedPosts = (posts, sort) => {
+
+  const sortedPosts = useMemo(() => {
+
+    if (sort) {
+
+      return [...posts].sort((a, b) => a[sort].localeCompare(b[sort]));
+
+    }
+
+    return posts;
+
+  }, [sort, posts]);
+
+  return sortedPosts;
+
+};
+
+  
+
+export const usePosts = (posts, sort, query) => {
+
+  const sortedPosts = useSortedPosts(posts, sort);
+
+  const sortedAndSearchedPosts = useMemo(() => {
+
+    return sortedPosts.filter((post) =>
+
+      post.title.toLocaleLowerCase().includes(query)
+
+    );
+
+  }, [query, sortedPosts]);
+
+  return sortedAndSearchedPosts;
+
+};
+~~~
+- Пример использования 
 ## useState
 Позволяет работать с состоянием объектов. Пример использования - у нас есть счетчик и две кнопки увеличивающая и уменьшающая значение. Чтобы динамически изменять значение и выводить его пользователю нам и нужно воспользоваться useState.
 ### Синтаксис объявления состояния 
