@@ -416,3 +416,13 @@ import axios from "axios";
 npm i axios
 ~~~
 - Установка библиотеки axios и импортирование библиотеки в проект
+~~~
+  async function fetchPosts() {
+
+    const response = await axios.get(
+
+      "https://jsonplaceholder.typicode.com/posts"
+
+    );
+~~~
+- Пример запроса
