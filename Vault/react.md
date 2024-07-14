@@ -242,7 +242,28 @@ useEffect(()=>{
 - [] - отработает 1 раз в момент монтирования компонента
 - [filter] - будет отрабатывать каждый раз при изменении filter
 - return функция будет вызвана в момент размонтирования
+~~~
+async function fetchPosts() {
 
+    const response = await axios.get(
+
+      "https://jsonplaceholder.typicode.com/posts"
+
+    );
+
+    console.log(response.data);
+
+    setPosts(response.data)
+
+  }
+
+  useEffect(()=>{
+
+    fetchPosts()
+
+  },[])
+~~~
+- С помощью useEffect подгрузили массив данных из json placeholder
 # Компоненты
 ## Жизненный цикл компонента
 Происходит в три этапа
