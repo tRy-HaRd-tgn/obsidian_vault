@@ -61,6 +61,7 @@ function MyButton(props) {
 Мы можем использовать хуки только на высшем уровне вложенности ( объявление и использование хуков внутри функций, циклов, условиях запрещено) 
 ## Кастомные хуки
 Выглядят как функции, внутри которых используются стандартные react хуки
+## Пример с сохранением отсортированного массива
 ~~~ js
 import { useMemo } from "react";
 
@@ -103,6 +104,44 @@ export const usePosts = (posts, sort, query) => {
 };
 ~~~
 - Пример использования 
+## Пример с сохранением данных о загрузке данных
+~~~ js
+import { useState } from "react";
+
+import React  from "react";
+
+export const useFetching = (callback) => {
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [error, setError] = useState("");
+
+  const fetching = async () => {
+
+    try {
+
+      setIsLoading(true);
+
+      await callback();
+
+    } catch (e) {
+
+      setError(e.message);
+
+    } finally {
+
+      setIsLoading(false)
+
+    }
+
+  };
+
+  return [fetching, isLoading, error]
+
+};
+~~~
+- где fetching - асинхронный метод 
+- isLoading - 
 ## useState
 Позволяет работать с состоянием объектов. Пример использования - у нас есть счетчик и две кнопки увеличивающая и уменьшающая значение. Чтобы динамически изменять значение и выводить его пользователю нам и нужно воспользоваться useState.
 ### Синтаксис объявления состояния 
@@ -242,7 +281,7 @@ useEffect(()=>{
 - [filter] - будет отрабатывать каждый раз при изменении filter
 - return функция будет вызвана в момент размонтирования
 ### Пример использования
-~~~
+~~~ js
 async function fetchPosts() {
 
     const response = await axios.get(
@@ -455,12 +494,12 @@ const addNewPost = (e) => {
 # Работа с сервером
 ## Тестовый пример
 Для теста функционала можно использовать библиотеку axios и сервис JSON placeholder
-~~~
+~~~ js
 import axios from "axios";
 npm i axios
 ~~~
 - Установка библиотеки axios и импортирование библиотеки в проект
-~~~
+~~~ js
   async function fetchPosts() {
 
     const response = await axios.get(
