@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "74c2dfd4fe4cdf10",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,7 +162,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "74c2dfd4fe4cdf10",
+  "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
     "Vault/css.md",
     "Vault/react.md",
