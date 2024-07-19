@@ -13,7 +13,10 @@ npm i webpack webpack-cli -D
 ~~~ js
 module.exports = {entry: './app/index.js'}
 ~~~
-После создания точки входа нужно сообщить webpack о том какие преобразования он должен совершить, это производиться с помощью лоадеров
-~~~
-
+После создания точки входа нужно сообщить webpack о том какие преобразования он должен совершить перед преобразованием в bundle, это производиться с помощью лоадеров
+~~~ js
+import auth from './api/auth' // 
+import config from './utils/config.json' // 
+import './styles.css' // ️
+import logo from './assets/logo.svg' // ️
 ~~~
