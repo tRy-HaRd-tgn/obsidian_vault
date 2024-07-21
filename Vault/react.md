@@ -324,6 +324,8 @@ async function fetchPosts() {
   },[])
 ~~~
 - С помощью useEffect подгрузили массив данных из json placeholder
+## useHistory
+
 # Компоненты
 ## Жизненный цикл компонента
 Происходит в три этапа
@@ -546,6 +548,7 @@ npm i react-router-dom
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 ~~~
 роутинг производиться таким образом
+## Пример
 ~~~
 <BrowserRouter>
 
@@ -555,7 +558,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
       </Routes>
 
-    </BrowserRouter>
+</BrowserRouter>
 ~~~
 - где path - путь по которому мы можем получить доступ к странице
 - element - компонент в виде страницы к которую мы хотим отрисовать
