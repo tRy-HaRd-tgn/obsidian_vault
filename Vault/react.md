@@ -337,6 +337,10 @@ import { useNavigate } from "react-router-dom"
 <MyButton onClick={() => router.push('/posts/&{props.post.id}')}>Открыть</MyButton>
 ~~~
 - пример использования - позволяет перейти на страницу поста по id
+~~~
+<Route path="/posts/:id" element={<PostIdPage></PostIdPage>}></Route>
+~~~
+- Чтобы сделать путь динамическим нужно написать /:id
 # Компоненты
 ## Жизненный цикл компонента
 Происходит в три этапа
