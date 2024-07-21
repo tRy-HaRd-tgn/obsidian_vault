@@ -326,7 +326,7 @@ async function fetchPosts() {
 - С помощью useEffect подгрузили массив данных из json placeholder
 ## useNavigate
 Хук предназначен для осуществления динамической навигации
-## импортирование 
+### импортирование 
 ~~~ js
 import { useNavigate } from "react-router-dom"
 ~~~
@@ -341,6 +341,8 @@ import { useNavigate } from "react-router-dom"
 <Route path="/posts/:id" element={<PostIdPage></PostIdPage>}></Route>
 ~~~
 - Чтобы сделать путь динамическим нужно написать /:id
+# useParams
+хук предназначенный
 # Компоненты
 ## Жизненный цикл компонента
 Происходит в три этапа
