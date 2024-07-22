@@ -330,6 +330,50 @@ async function fetchPosts() {
 ~~~ js
 import { useNavigate } from "react-router-dom"
 ~~~
+### Пример использования
+~~~ js
+const PostItem = (props) => {
+
+  const router = useNavigate();
+
+  let path ='/posts/' + props.post.id;
+
+  return (
+
+    <div className="post">
+
+      <div className="post_content">
+
+        <strong>
+
+          {props.post.id}. {props.post.title}
+
+        </strong>
+
+        <div>{props.post.body}</div>
+
+      </div>
+
+      <div className="post_btns">
+
+        <MyButton onClick={() => router(path)}>
+
+          Открыть
+
+        </MyButton>
+
+        <MyButton onClick={() => props.remove(props.post)}>Удалить</MyButton>
+
+      </div>
+
+    </div>
+
+  );
+
+};
+~~~
+- Изменяем адресную строку ну posts/'id'
+
 суть работы заключается в объекте истории содержащем некоторые методы, которые мы можем использовать для навигации между маршрутами внутри компонента
 есть свойство location - показывающее текущий путь
 есть функции go и goBack, push(можем переходить на конкретную страницу без использования ссылок)
