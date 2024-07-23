@@ -287,6 +287,7 @@ const sortedPosts = useMemo(() => {
 - callback отрабатывает только в том случае, когда изменяются selectedSort или post
 ## useCallback
 ## useContext
+хук который позволяет 
 
 ## useEffect
 Предназначен для слежки за изменением данных 
