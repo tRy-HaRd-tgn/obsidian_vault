@@ -301,12 +301,20 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./UI/navbar/Navbar";
 import AppRouter from "./components/AppRouter";
 import { AuthContext } from "./context";
-
+import { useState } from "react";
 function App() {
+
+  const [isAuth, setIsAuth] = useState(false);
 
   return (
 
-    <AuthContext.Provider>
+    <AuthContext.Provider value={{
+
+      isAuth,
+
+      setIsAuth: setIsAuth()
+
+    }}>
 
       <BrowserRouter>
 
@@ -324,6 +332,7 @@ function App() {
 
 export default App;
 ~~~
+- Создаем состояние и аргументами передаем в наш контекст поле и функцию изменения состояния
 ## useEffect
 Предназначен для слежки за изменением данных 
 ~~~ js
