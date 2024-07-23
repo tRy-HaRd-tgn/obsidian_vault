@@ -288,7 +288,42 @@ const sortedPosts = useMemo(() => {
 ## useCallback
 ## useContext
 хук который позволяет создать глобальное хранилище с данными
+### Импортирование
+~~~ js
+import { createContext } from "react";
+export const AuthContext = createContext(null)
+~~~
+- Создание контекста
+### Использование
+Чтобы воспользоваться контекстом нужно обернуть приложение в созданный контекст
+~~~ js
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./UI/navbar/Navbar";
+import AppRouter from "./components/AppRouter";
+import { AuthContext } from "./context";
 
+function App() {
+
+  return (
+
+    <AuthContext.Provider>
+
+      <BrowserRouter>
+
+        <Navbar></Navbar>
+
+        <AppRouter></AppRouter>
+
+      </BrowserRouter>
+
+    </AuthContext.Provider>
+
+  );
+
+}
+
+export default App;
+~~~
 ## useEffect
 Предназначен для слежки за изменением данных 
 ~~~ js
