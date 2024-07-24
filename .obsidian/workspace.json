@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/Java Script.md",
+                "file": "Vault/react.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/Java Script.md",
+                "file": "Vault/react.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/Java Script.md",
+                "file": "Vault/react.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/Java Script.md"
+                "file": "Vault/react.md"
               }
             }
           }
@@ -164,11 +164,11 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
+    "Vault/Java Script.md",
     "Vault/react.md",
     "Vault/webpack.md",
     "Vault/sql.md",
     "Vault/npm.md",
-    "Vault/Java Script.md",
     "Vault/html.md",
     "Vault/css.md",
     "Vault/Математика.md",
