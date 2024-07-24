@@ -9,3 +9,4 @@ localStorage.removeItem('auth');
 localStorage.setItem('auth','true')
 ~~~
 - Пример заполнения значений
+## Асинхронные функции
