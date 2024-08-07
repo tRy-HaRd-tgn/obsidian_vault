@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/Без названия.md",
+                "file": "Vault/Устройство web.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/Без названия.md",
+                "file": "Vault/Устройство web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/Без названия.md",
+                "file": "Vault/Устройство web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/Без названия.md"
+                "file": "Vault/Устройство web.md"
               }
             }
           }
@@ -165,7 +165,7 @@
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
     "Vault/react.md",
-    "Vault/Без названия.md",
+    "Vault/Устройство web.md",
     "Vault/DevOps.md",
     "Vault/Java Script.md",
     "Vault/webpack.md",
