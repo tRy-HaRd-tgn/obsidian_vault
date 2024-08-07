@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/Устройство web.md",
+                "file": "Vault/react.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/Устройство web.md",
+                "file": "Vault/react.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/Устройство web.md",
+                "file": "Vault/react.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/Устройство web.md"
+                "file": "Vault/react.md"
               }
             }
           }
@@ -164,6 +164,7 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
+    "Vault/Устройство web.md",
     "Vault/webpack.md",
     "Vault/sql.md",
     "Vault/react.md",
@@ -172,7 +173,6 @@
     "Vault/html.md",
     "Vault/DevOps.md",
     "Vault/Математика.md",
-    "Vault/Устройство web.md",
     "Vault/css.md",
     "Templates/создание css модуля.png",
     "создание css модуля.png",
