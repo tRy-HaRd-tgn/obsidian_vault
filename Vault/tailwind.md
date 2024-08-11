@@ -27,4 +27,24 @@ module.exports = {
 @tailwind utilities;
 ~~~
 ## 4. Запустите процесс сборки Tailwind CLI
+Запустите инструмент CLI, чтобы просканировать файлы шаблонов на предмет классов и создать свой CSS.
+~~~js
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+~~~
 ## 5. Начните использовать Tailwind в своем HTML
+Добавьте свой скомпилированный файл CSS в `<head>` и начните использовать классы утилиты Tailwind для стилизации вашего контента.
+~~~ html
+<!doctype html> 
+<html>
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="./output.css" rel="stylesheet"> 
+</head> 
+	<body> 
+		<h1 class="text-3xl font-bold underline"> 
+		Привет мир! 
+		</h1> 
+	</body> 
+</html>
+~~~
