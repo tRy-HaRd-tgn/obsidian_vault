@@ -20,5 +20,11 @@ module.exports = {
 }
 ~~~
 ## 3. Добавьте директивы Tailwind в свой CSS
-## 4.
-## 5.
+Добавьте директивы `@tailwind` для каждого макета Tailwind в свой основной файл CSS.
+~~~ js
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+~~~
+## 4. Запустите процесс сборки Tailwind CLI
+## 5. Начните использовать Tailwind в своем HTML
