@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/next.js.md",
+                "file": "Vault/css.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/next.js.md",
+                "file": "Vault/css.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/next.js.md",
+                "file": "Vault/css.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/next.js.md"
+                "file": "Vault/css.md"
               }
             }
           }
@@ -164,10 +164,10 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
+    "Vault/next.js.md",
     "Vault/tailwind.md",
     "Vault/webpack.md",
     "Vault/npm.md",
-    "Vault/next.js.md",
     "Vault/Без названия",
     "Vault/Java Script.md",
     "Vault/sql.md",
