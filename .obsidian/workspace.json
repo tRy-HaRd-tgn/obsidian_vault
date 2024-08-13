@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/css.md",
+                "file": "Vault/react.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/css.md",
+                "file": "Vault/react.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/css.md",
+                "file": "Vault/react.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/css.md"
+                "file": "Vault/react.md"
               }
             }
           }
@@ -164,6 +164,7 @@
   },
   "active": "c91842e29b82ccbe",
   "lastOpenFiles": [
+    "Vault/css.md",
     "Vault/next.js.md",
     "Vault/tailwind.md",
     "Vault/webpack.md",
@@ -176,7 +177,6 @@
     "Vault/html.md",
     "Vault/DevOps.md",
     "Vault/Математика.md",
-    "Vault/css.md",
     "Templates/создание css модуля.png",
     "создание css модуля.png",
     "Pasted image 20240706151504.png",
