@@ -11,8 +11,12 @@
             "id": "b68326d3a1e4fc00",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Vault/Устройство web.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Vault/Устройство web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Vault/Устройство web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Vault/Устройство web.md"
+              }
             }
           }
         ],
@@ -156,6 +164,7 @@
   },
   "active": "b68326d3a1e4fc00",
   "lastOpenFiles": [
+    "Vault/Математика.md",
     "Vault/react.md",
     "Vault/next.js.md",
     "Vault/npm.md",
@@ -168,7 +177,6 @@
     "Vault/Без названия",
     "Vault/sql.md",
     "Vault/Устройство web.md",
-    "Vault/Математика.md",
     "Templates/создание css модуля.png",
     "создание css модуля.png",
     "Pasted image 20240706151504.png",
