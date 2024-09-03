@@ -1,0 +1,7 @@
+.trashed*
+!.empty
+
+# Workspace Cache 
+.obsidian/workspace.json 
+.obsidian/workspace-mobile.json 
+
