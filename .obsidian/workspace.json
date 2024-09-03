@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/webpack.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/webpack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vault/react.md",
+                "file": "Vault/webpack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vault/react.md"
+                "file": "Vault/webpack.md"
               }
             }
           }
@@ -164,9 +164,10 @@
   },
   "active": "b68326d3a1e4fc00",
   "lastOpenFiles": [
+    "Vault/Цос (Кабура).md",
+    "Vault/react.md",
     "Vault/Устройство web.md",
     "Vault/Математика.md",
-    "Vault/react.md",
     "Vault/next.js.md",
     "Vault/npm.md",
     "Vault/DevOps.md",
