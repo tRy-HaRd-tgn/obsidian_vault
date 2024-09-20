@@ -75,9 +75,47 @@ export default defineConfig({
 }
 ~~~
 # 8 шаг
-поскольку мы переходим на vite, хорошая идея - рассмотреть возможность перехода с jest на 
+поскольку мы переходим на vite, хорошая идея - рассмотреть возможность перехода с [jest](https://jestjs.io/) на vitest
 ## 8.1 шаг 
+установите vitest зависимости 
+~~~ terminal
+npm i -D jsdom vitest @vitest/coverage-v8
+~~~
 ## 8.2 шаг
+обновите vite.config.ts включив в него
+~~~ ts
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: '/',
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.ts',
+    css: true,
+    reporters: ['verbose'],
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*'],
+      exclude: [],
+    }
+  },
+})
+~~~
 ## 8.3 шаг
+обновите package.json vite скриптами
+~~~ json
+ "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage --watch=false"
+  },
+~~~
 # 9 шаг
+если вы используйте GitHub Actions чтобы пушить ваш код в GitHub репозиторий, вам нужно обновить файл рабочего процесса
 
