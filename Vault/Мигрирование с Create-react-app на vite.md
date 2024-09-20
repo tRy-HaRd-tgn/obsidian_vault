@@ -117,5 +117,47 @@ export default defineConfig({
   },
 ~~~
 # 9 шаг
-если вы используйте GitHub Actions чтобы пушить ваш код в GitHub репозиторий, вам нужно обновить файл рабочего процесса
+если вы используйте GitHub Actions чтобы пушить ваш код в GitHub репозиторий, вам нужно обновить файл рабочего процесса так как vite генерирует dist папку, когда мы запускаем npm run build
+~~~
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+~~~
 
