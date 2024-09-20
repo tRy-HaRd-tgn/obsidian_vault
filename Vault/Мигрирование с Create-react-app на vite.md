@@ -34,9 +34,50 @@ export default defineConfig({
 })
 ~~~
 # 5 шаг
-
+добавление vite-env.d.ts
+создайте vite-env.d.ts файл внутри src со следующим кодом
+~~~ ts
+/// <reference types="vite/client" />
+~~~
 # 6 шаг
+добавление vite скриптов
+замените CRA скрипты в  package.json на Vite скрипты
+~~~ ts
+ "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+}
+~~~
 # 7 шаг
+обновите tsconfig.json до последней версии
+~~~ json
+{ 
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client", "vite-plugin-svgr/client"]
+  },
+  "include": ["src"]
+}
+~~~
 # 8 шаг
+поскольку мы переходим на vite, хорошая идея - рассмотреть возможность перехода с jest на 
+## 8.1 шаг 
+## 8.2 шаг
+## 8.3 шаг
 # 9 шаг
 
