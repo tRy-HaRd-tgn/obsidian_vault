@@ -38,4 +38,40 @@ npm dev
 Next.js обеспечивает динамическую маршрутизацию за счет использования скобок [] в имени файла. Например файл с именем [id].tsx в папке user может соответствовать таким роутам, как /user/1, /user/2 и т.д. Динамические маршруты позволяют создавать адаптируемые и параметризованные веб-адреса, что предоставляет пользователям представление индивидуального контента.
 # Получение данных
 В Page  роутере реализованы такие методы получения данных, как **getStaticProps** и **getServerSideProps**. Эти методы позволяют получать данные во время рендеринга на стороне сервера или во время сборки, что позволяет предварительно рендерить страницы с динамическим содержимым. Эта возможность гарантирует, что веб-приложение будет представлять пользователям актуальные данные без ущерба для производительности. Давайте рассмотрим их поподробнее. 
-**getStaticProps** - метод, 
+**getStaticProps** - метод, указывающий Next-компоненту выполнить внутреннюю логику и потом передать полученные данные и перерендерить себя во время процесса сборки приложения. Рендеринг на этапе сборки с помощью getStaticProps() означает, что перед размещением компонента Next.js преобразует react в HTML-страницы, и только после этого они размещаются на хостинге и предоставляются клиенту. Такая методика называется статической генерацией сайтов, или **SSG**.
+## Пример компонента
+~~~ js
+
+import type { InferGetStaticPropsType, GetStaticProps } from "next";
+
+type Product = {  
+	id: number;  
+	name: string;  
+	price: number;  
+	isAvailable: boolean;
+};
+export const getStaticProps = (async (context) => {  
+	const res = await fetch("https://...");  
+	const product = await res.json();  
+	if (!product) {    
+	return {      
+		notFound: true,    
+		};  
+	} else if (!product.isAvailable) {    
+	return {      
+		redirect: {        
+			destination: "/products",        
+			permanent: false,      
+		},
+	};  
+}  
+return { 
+	props: { product } };}) satisfies GetStaticProps<{  
+	product: Product;
+}>;
+export default function Page({  
+	product,
+}: InferGetStaticPropsType<typeof getStaticProps>) {  
+	return product.name;
+}
+~~~
