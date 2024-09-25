@@ -68,3 +68,14 @@ body.ie_7 .some { zoom: 1; display: inline; }
 ~~~ scss
 $some: red;
 ~~~
+## @математика
+Математические вычисления в scss vможно производить без функции calc(),
+так же математику можно разделить на математику чисел и цветов.
+~~~ scss
+.block {
+  $block_width: 500px;
+  padding: 5px;
+  border: 1px solid black;
+  width: $block_width - ( 5px * 2 ) - ( 1px * 2 );
+}
+~~~
