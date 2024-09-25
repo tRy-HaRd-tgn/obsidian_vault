@@ -49,3 +49,22 @@ $margin: 16px;
 #some { border: 1px solid red; }
 #some .some { background: white; }
 ~~~
+Символ `&` равносилен родительскому селектору.
+~~~ scss
+$IE_7: 'body.ie_7';
+//...
+.some {
+  display: inline-block;
+  #{$IE_7} & { zoom: 1; display: inline; }
+}
+
+/* => */
+
+.some { display: inline-block; }
+body.ie_7 .some { zoom: 1; display: inline; }
+~~~
+## $variables 
+Переменные определяются так
+~~~ scss
+$some: red;
+~~~
