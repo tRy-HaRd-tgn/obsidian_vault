@@ -4,6 +4,33 @@ SCSS - диалект языка SASS. Синтаксис данного язы�
 # Отличие scss от sass
 Заключается оно в том, что scss больше похож на обычный css.
 ## Пример sass кода
-~~~ sass
-
+~~~ sss
+$blue: #3bbfce
+$margin: 16px
+.content-navigation
+  border-color: $blue
+  color: darken($blue, 9%)
+.border
+  padding: $margin / 2
+  margin: $margin / 2
+  border-color: $blue
 ~~~
+## Пример scss кода
+~~~ scss
+$blue: #3bbfce;
+$margin: 16px;
+
+.content-navigation {
+  border-color: $blue;
+  color: darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+~~~
+# Установка и использование
+- Для начала нужно установить [ruby](https://www.ruby-lang.org/en/downloads/) . После чего 
+- 
