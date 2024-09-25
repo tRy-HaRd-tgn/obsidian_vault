@@ -80,3 +80,19 @@ $some: red;
 }
 ~~~
 ## @строки
+SCSS умеет складывать строки, а также поддерживает конструкцию #{}
+~~~ scss
+$image_dir: 'images/web/';
+$page: 12;
+
+.some 
+{ 
+  background-image: url( $image_dir + 'pen.gif' ); 
+  &:before { content: "Страница #{ $page }!"; }
+}
+
+/* => */
+
+.some { background-image: url("images/web/pen.gif"); }
+.some:before { content: "Страница 12!"; }
+~~~
