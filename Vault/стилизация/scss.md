@@ -38,3 +38,14 @@ $margin: 16px;
 # Практика
 ## @Вложенность
 Одна из самых желанных фич для css является вложенность селекторов
+~~~ scss
+#some {
+  border: 1px solid red;
+  .some { background: white; }
+}
+
+/* => */
+
+#some { border: 1px solid red; }
+#some .some { background: white; }
+~~~
