@@ -708,3 +708,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
     <Item key={index} />
 )}
 ~~~
+# Модальное окно
+
+~~~ js
+
+~~~
