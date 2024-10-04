@@ -16,10 +16,11 @@ import App from './App'
 const defaultState = {
 	cash: 0,
 }
+action = {type:'',payload:''}
 const reducer = (state,action) =>{
 	switch(action.type){
 		case:'ADD_CASH'
-			return {...state}
+			return {...state, cash:}
 		case:'GET_CASH'
 			return {}
 		default:
