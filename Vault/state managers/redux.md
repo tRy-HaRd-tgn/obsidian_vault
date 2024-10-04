@@ -21,6 +21,7 @@ const reducer = (state,action) =>{
 		case:'ADD_CASH'
 			return {...state}
 		case:'GET_CASH'
+			return {}
 		default:
 			return state
 	}
