@@ -20,14 +20,14 @@ action = {type:'',payload:''}
 const reducer = (state,action) =>{
 	switch(action.type){
 		case:'ADD_CASH'
-			return {...state, cash:}
+			return {...state, cash: state.cash + action.payload}
 		case:'GET_CASH'
-			return {}
+			return {...state, cash: state.cash - action.payload}
 		default:
 			return state
 	}
 }
-const store = createStore(reducer)
+const store = createStore(reducer,)
 // React 18
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -36,6 +36,16 @@ root.render(
   </Provider>
 )
 ~~~
+## использование созданного хранилища
+~~~ js
+const dispatch = useDispatch();
+const cash = useSelector(state=>state.cash)
+const addCash = () =>{
+dispatch({type:'ADD_CASH',payload})
+}
+~~~
+- cash - состояние которое мы создали
+- addCash - функция добавления денег (type - берется из reducer, payload - количество на которые мы увеличиваем величину де)
 # Принцип работы
 Прежде чем как-то изменить состояние мы должны обратиться к диспетчеру и передать action чтобы он выполнил его, но диспетчер не выполняет action, он передает его в reducer, а reducer уже выполняет action.
 # Хуки 
