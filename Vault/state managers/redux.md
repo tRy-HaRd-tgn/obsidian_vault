@@ -40,12 +40,15 @@ root.render(
 ~~~ js
 const dispatch = useDispatch();
 const cash = useSelector(state=>state.cash)
-const addCash = () =>{
-dispatch({type:'ADD_CASH',payload})
+const addCash = (cash) =>{
+dispatch({type:'ADD_CASH', payload:cash})
+}
+const getCash = (cash) =>{
+dispatch({type:'GET_CASH', payload:cash})
 }
 ~~~
 - cash - состояние которое мы создали
-- addCash - функция добавления денег (type - берется из reducer, payload - количество на которые мы увеличиваем величину де)
+- addCash - функция добавления денег (type - берется из reducer, payload - количество на которые мы увеличиваем величину денег)
 # Принцип работы
 Прежде чем как-то изменить состояние мы должны обратиться к диспетчеру и передать action чтобы он выполнил его, но диспетчер не выполняет action, он передает его в reducer, а reducer уже выполняет action.
 # Хуки 
