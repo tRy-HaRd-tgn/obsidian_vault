@@ -17,7 +17,7 @@ git config --global color.ui auto
 git config --global core.editor "[program]"
 ~~~
 # Команды терминала
-~~~
+~~~ terminal
 ls - просмотр папок в директории
 cd - переход в папку
 mkdir - создание папки
@@ -27,6 +27,8 @@ mv test.txt test_original.txt - переименование файла
 echo "aboba" - выведет строчку в терминал
 echo "aboba" > test_original.txt - выведет строчку в файл
 cat test_original.txt - посмотреть содержимое файла
+rm test_original.txt - удалить файл
+rm -R TestDir - удаление директории и всех файлов внутри
 ~~~
 
 Комиты обязательно писать на английском языке, всегда.
