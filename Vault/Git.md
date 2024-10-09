@@ -16,5 +16,17 @@ git config --global user.email "[email address]"
 git config --global color.ui auto
 git config --global core.editor "[program]"
 ~~~
+# Команды терминала
+~~~
+ls - просмотр папок в директории
+cd - переход в папку
+mkdir - создание папки
+touch - создание нового файла
+cp test.txt test_copy.txt - копирование файла
+mv test.txt test_original.txt - переименование файла
+echo "aboba" - выведет строчку в терминал
+echo "aboba" > test_original.txt - выведет строчку в файл
+cat test_original.txt - посмотреть содержимое файла
+~~~
 
 Комиты обязательно писать на английском языке, всегда.
