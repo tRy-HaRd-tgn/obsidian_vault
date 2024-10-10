@@ -39,4 +39,4 @@ Fragment - модульная часть activity, у которой свой ж
 - Массивы - JSONArray
 - Значения - JSONStringer 
 - Ошибки - JSONExeption 
-У
+У каждого из представленных выше методов 
